@@ -3,11 +3,11 @@
     <form class="col s12">
       <div class="row">
         <div class="col s11 input-field">
-          <input type="text" class="validate" name="pizza" id="pizza">
-          <label for="pizza">Pizza</label>
+          <input type="text" class="validate" name="burger" id="burger">
+          <label for="burger">Burger</label>
         </div>
         <div class="col s1 input-field">
-          <button id="addPizza" class="btn-large btn-floating waves-effect waves-light green">
+          <button id="addBurger" class="btn-large btn-floating waves-effect waves-light green">
             <i class="material-icons">
               add
             </i>
@@ -18,13 +18,13 @@
   </div>
   <div class="row">
     <div id="unEaten" class="col s4">
-      <h5 class="center-align">Un-Eaten Pizzas</h5>
-      {{#each pizzas}}
+      <h5 class="center-align">Un-Eaten Burgers</h5>
+      {{#each burgers}}
       {{#unless eaten}}
         <div class="row card-panel">
           <p class="center-align"><b>{{name}}</b></p>
           <p class="center-align">
-            <button data-pizza="{{id}}" class="btn-floating waves-effect waves-light blue eatPizza">
+            <button data-burger="{{id}}" class="btn-floating waves-effect waves-light blue eatBurger">
               <i class="material-icons">local_dining</i>
             </button>
           </p>
@@ -34,13 +34,13 @@
     </div>
     <div class="col s4"></div>
     <div id="eaten" class="col s4">
-      <h5 class="center-align">Eaten Pizzas</h5>
-      {{#each pizzas}}
+      <h5 class="center-align">Eaten Burgers</h5>
+      {{#each burgers}}
       {{#if eaten}}
         <div class="row card-panel">
           <p class="center-align"><b>{{name}}</b></p>
           <p class="center-align">
-            <button data-pizza="{{id}}" class="btn-floating waves-effect waves-light red removePizza">
+            <button data-burger="{{id}}" class="btn-floating waves-effect waves-light red removeBurger">
               <i class="material-icons">delete</i>
             </button>
           </p>
