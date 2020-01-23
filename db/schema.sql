@@ -1,6 +1,4 @@
-DROP DATABASE IF EXISTS burger_db;
-CREATE DATABASE burger_db;
-USE burger_db;
+USE mifsyn2dk77bblmk;
 
 CREATE TABLE burgers (
   id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,

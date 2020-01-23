@@ -1,4 +1,4 @@
-USE burger_db;
+USE mifsyn2dk77bblmk;
 
 INSERT INTO burgers (name, eaten)
 VALUES ('Cheese Burger', false),
